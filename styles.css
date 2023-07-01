@@ -1,4 +1,4 @@
-* body, page, section, table, div, p, h1, h4, a, img {border: 1px solid red;} 
+* body, page, section, grid, table, footer, div, p, h1, h2, h4, a, img {border: 1px solid red;} 
 
 @font-face {
   font-family: 'Inter';
@@ -94,7 +94,7 @@ color: #FFFFFF;
   line-height: 104%;
   color: #FFFFFF;
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
 }
 .message__subtitle {
   width: 600px;
@@ -106,7 +106,7 @@ color: #FFFFFF;
   line-height: 120%;
   color: #FFFFFF;
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
 }
 .message__polka {
   width: 928px;
@@ -200,26 +200,6 @@ color: #FFFFFF;
   box-sizing: border-box;
   margin: 0 auto;
 }
-/*
-.regions {
-  width: 928px;
-  height: 3292;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-.region {
-  width: 928px;
-  height: 640;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-.region__name {
-
-}*/
 
 .regions {
   width: 928px;
@@ -230,10 +210,12 @@ color: #FFFFFF;
   display: grid;
   grid-template-columns: 440px 450px;
   grid-template-rows: 152px 174px 232px;
-  justify-content: space-between;
+  gap: 19px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 .region__title {
   display: grid;
@@ -243,81 +225,211 @@ color: #FFFFFF;
   font-size: 72px;
   line-height: 106px;
   color: #FFFFFF;
+  
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.region__url {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 2px;
+  color: #AAAAAA;
+}
+.region__link {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 122%;
+  text-decoration-line: underline;
+  color: #FFFFFF;
+}
+.region__image {
+  width: 440px;
+  height: 440px;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+}
+.region__nature {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 163%;
+  color: #FFFFFF;
+}
+.region__item {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+}
+.region__item:nth-child(1) {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin: 0;
+}
+.region__item:nth-child(2) {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.region__item:nth-child(3) {
+  grid-column: 1/2;
+  grid-row: span 2;
+}
+.region__item:nth-child(4) {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.region__item:nth-child(4) {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
 
 
 .cover {
   position: relative;
-
   display: flex;
-
-  /* TODO как подключаем картинку? */
-  /* TODO как задаем высоту? */
-  outline: 1px solid red;
-
-  background-image: url('./images/background.jpg');
+  align-items: center;
+  margin: auto;
+  background-image: url('./sprint-3-images/cover-trains.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 
-  min-height: 740px;
+  width: 1024px;
+  height: 640px;
 
   z-index: 0;
 }
-
+.cover:hover {
+  background-color: #2A2C2F;
+  opacity: 0.3;
+}
 .cover__content {
-  color: #fff;
-
-  /* TODO как будем делать отступы вокруг контента */
-  padding: 190px 90px 88px 90px;
-  width: 100%;
-  box-sizing: border-box;
-
+  
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-
+  align-items: center;
+  margin: auto;
+  z-index: 1;
+}
+.cover__title {
+  margin: 0;
+  height: 152px;
+  width: 500px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 106%;
+  text-align: center;
+  color: #FFFFFF;
+  z-index: 1;
+}
+.cover__subtitle {
+  padding: 0;
+  margin: 0;
+  width: 360px;
+  height: 66px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 122%;
+  text-align: center;
+  color: #FFFFFF;
   z-index: 1;
 }
 
-.cover__name {
-  display: block;
+.footer {
+  margin: auto;
+  width: 1184px;
+  height: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-
-.cover__title {
-  margin: 0 0 32px;
-
-  font-weight: 900;
-  font-size: 72px;
-  line-height: 1.05; /* TODO обратить внимание, что лучше относительные единицы юзать для line-height */
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-
-.cover__subtitle {
+.footer__links {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
   padding: 0;
-  margin: 0 0 24px;
+  margin: 0;
   list-style-type: none;
-
-  font-size: 18px;
-  line-height: 1.22;
 }
-
-.cover__subtitle:last-child {
-  margin-bottom: 0;
+.footer__maps {
+  width: 50px;
+  height: 18px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 112%;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.footer__pogoda {
+  width: 57px;
+  height: 18px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 112%;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.footer__rasp {
+  width: 94px;
+  height: 18px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 112%;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.footer__calendar {
+  width: 86px;
+  height: 18px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 112%;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.footer__travel {
+  width: 106px;
+  height: 18px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 112%;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.footer__auther {
+  width: 186px;
+  height: 16px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 114%;
+  text-align: right;
+  color: #FFFFFF;
 }
 
 /* Адаптив */
