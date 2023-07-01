@@ -1,0 +1,314 @@
+* body, page, section, table, div, p, h1, h4, a, img {border: 1px solid red;} 
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://fonts.gstatic.com/s/inter/v2/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  src: url('https://fonts.gstatic.com/s/inter/v2/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 900;
+  src: url('https://fonts.gstatic.com/s/inter/v2/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2') format('woff2');
+}
+
+.body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  font-family: 'Inter', 'Arial', sans-serif;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 928px;
+  height: 52px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  margin: 0 auto;
+}
+
+.header__img {
+  width: 176px;
+  height: 52px;
+}
+.header__lang {
+  align-self: flex-end;
+  
+  }
+.header__lang_ru {
+  width: 30px;
+  height: 28px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 117%;
+  text-align: right;
+  color: #FFFFFF;
+}
+.header__lang_en {
+  width: 29px;
+  height: 28px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 117%;
+text-align: right;
+text-decoration: none;
+color: #FFFFFF;
+}
+
+.message {
+  width: 928px;
+  height: 962px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.message__title {
+  width: 720px;
+  height: 200px;
+  font-family: "Inter"
+  font-style: normal;
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 104%;
+  color: #FFFFFF;
+  text-align: center;
+  margin: 0;
+}
+.message__subtitle {
+  width: 600px;
+  height: 72px;
+  font-family: "Inter"
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 120%;
+  color: #FFFFFF;
+  text-align: center;
+  margin: 0;
+}
+.message__polka {
+  width: 928px;
+  height: 580px;
+  object-fit: cover;
+  margin: 0;
+}
+.message__text {
+  width: 168px;
+  height: 14px;
+  align-self: flex-start;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 140%;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+
+.infor {
+  width: 928px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.infor__content {
+  width: 690px;  
+  height: 429px;
+}
+.infor__title {
+  width: 690ps;
+  height: 58px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 107%;
+  color: #FFFFFF;
+}
+.infor__blockquote {
+  margin: 0;
+  width: 690px;
+  height: 208px;
+}
+.infor__quote {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 163%;
+  color: #FFFFFF;
+}
+.infor__digits {
+  width: 690px;
+  height: 90px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 150%;
+  color: #FFFFFF;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.cover {
+  position: relative;
+
+  display: flex;
+
+  /* TODO как подключаем картинку? */
+  /* TODO как задаем высоту? */
+  outline: 1px solid red;
+
+  background-image: url('./images/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  min-height: 740px;
+
+  z-index: 0;
+}
+
+.cover__content {
+  color: #fff;
+
+  /* TODO как будем делать отступы вокруг контента */
+  padding: 190px 90px 88px 90px;
+  width: 100%;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  z-index: 1;
+}
+
+.cover__name {
+  display: block;
+}
+
+.cover__title {
+  margin: 0 0 32px;
+
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 1.05; /* TODO обратить внимание, что лучше относительные единицы юзать для line-height */
+}
+
+.cover__subtitle {
+  padding: 0;
+  margin: 0 0 24px;
+  list-style-type: none;
+
+  font-size: 18px;
+  line-height: 1.22;
+}
+
+.cover__subtitle:last-child {
+  margin-bottom: 0;
+}
+
+/* Адаптив */
+/* 1024 включено в интервал */
+@media screen and (max-width: 1024px) {
+  .cover__content {
+    padding: 190px 90px 157px 90px;
+  }
+
+  .cover__subtitle {
+    margin-bottom: 0;
+  }
+
+  .cover__subtitle:last-child {
+    display: none;
+  }
+
+  .cover {
+    min-height: 640px;
+  }
+
+  .cover:hover::before {
+    opacity: 0.8;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cover__subtitle {
+    margin-bottom: 20px;
+  }
+
+  .cover {
+    min-height: 480px;
+  }
+
+  .cover__content {
+    padding: 60px 40px 60px 90px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .cover {
+
+  }
+
+  .cover__content {
+    padding: 20px 16px;
+  }
+
+  .cover__title {
+    font-size: 32px;
+    line-height: 35px;
+
+    margin-bottom: 16px;
+  }
+
+  .cover__subtitle {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+.cover::before {
+  content: '';
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+
+  background-color: #2A2C2F;
+  opacity: 0.3;
+
+  transition: opacity 0.3s;
+}
