@@ -46,6 +46,12 @@ img {
   font-family: 'Inter', 'Arial', sans-serif;
   max-width: 1024px;
   margin: 0 auto;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .header {
@@ -131,7 +137,7 @@ img {
 
 .message__polka {
   width: 928px;
-  height: 580px;
+  /*height: 580px;*/
   object-fit: cover;
   margin: 0;
 }
@@ -178,11 +184,6 @@ img {
   color: #FFFFFF;
 }
 
-/*.infor__blockquote {
-  margin: 0;
-  width: 690px;
-  height: 208px;
-}*/
 .infor__quote {
   font-family: 'Inter';
   font-style: normal;
@@ -194,13 +195,6 @@ img {
 
 .infor__digits {
   width: 690px;
-  /*height: 90px;*/
-  /*font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 150%;
-  color: #FFFFFF;*/
   padding: 0;
   margin: 0;
   list-style-type: none;
@@ -219,14 +213,15 @@ img {
 
 .photo-grid {
   width: 928px;
-  height: 942px;
+  /*height: 942px;*/
   display: grid;
   gap: 14px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  grid-template-columns: repeat(3, 300px);
+  grid-template-columns: repeat(3, minmax(300px, 1fr)); /*надо ли так делать*/
   grid-template-rows: repeat(4, 225px);
+  grid-auto-flow: row;
   margin: 0 auto;
 }
 
@@ -247,7 +242,7 @@ img {
 .region__conteiner {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: max-content max-content;
+  grid-template-rows: min-content min-content;
   gap: 19px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -291,8 +286,8 @@ img {
 }
 
 .region__image {
-  width: 440px;
-  height: 440px;
+  max-width: 440px;
+  max-height: 440px;
   object-fit: cover;
   margin: 0;
   padding: 0;
@@ -327,16 +322,13 @@ img {
   background-color: #2A2C2F;
   opacity: 0.3;
 }
-
 .cover__content {
-
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: auto;
   z-index: 1;
 }
-
 .cover__title {
   margin: 0;
   height: 152px;
@@ -350,7 +342,6 @@ img {
   color: #FFFFFF;
   z-index: 1;
 }
-
 .cover__subtitle {
   padding: 0;
   margin: 0;
@@ -365,8 +356,6 @@ img {
   color: #FFFFFF;
   z-index: 1;
 }
-
-
 .footer {
   display: flex;
   justify-content: space-around;
@@ -374,7 +363,6 @@ img {
   padding: 0;
 
 }
-
 .footer-columns {
   width: 928px;
   height: 18px;
@@ -384,14 +372,12 @@ img {
   align-items: flex-start;
   margin: 50px 0;
 }
-
 .footer__column-links {
   display: flex;
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
-
 .footer__column-maps {
   width: 50px;
   height: 18px;
@@ -405,7 +391,6 @@ img {
   padding: 0;
   margin: 0 10px 0 0;
 }
-
 .footer__column-pogoda {
   width: 57px;
   height: 18px;
@@ -419,7 +404,6 @@ img {
   padding: 0;
   margin: 0 10px 0 0;
 }
-
 .footer__column-rasp {
   width: 94px;
   height: 18px;
@@ -433,7 +417,6 @@ img {
   padding: 0;
   margin: 0 10px 0 0;
 }
-
 .footer__column-calendar {
   width: 86px;
   height: 18px;
@@ -447,7 +430,6 @@ img {
   padding: 0;
   margin: 0 10px 0 0;
 }
-
 .footer__column-travel {
   width: 106px;
   height: 18px;
@@ -461,10 +443,6 @@ img {
   padding: 0;
   margin: 0;
 }
-
-/*.footer__column_content_copiright {
-
-}*/
 .footer__column-author {
   width: 186px;
   height: 16px;
@@ -479,6 +457,27 @@ img {
 
 /* Адаптив */
 /* 1024 включено в интервал */
+@media screen and (max-width: 1280px) {
+  .cover__content {
+    padding: 190px 90px 157px 90px;
+  }
+
+  .cover__subtitle {
+    margin-bottom: 0;
+  }
+
+  .cover__subtitle:last-child {
+    display: none;
+  }
+
+  .cover {
+    min-height: 640px;
+  }
+
+  .cover:hover::before {
+    opacity: 0.8;
+  }
+}
 @media screen and (max-width: 1024px) {
   .cover__content {
     padding: 190px 90px 157px 90px;
