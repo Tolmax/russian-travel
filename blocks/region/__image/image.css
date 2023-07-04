@@ -1,0 +1,7 @@
+.region__image {
+    max-width: 440px;
+    max-height: 440px;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+  }

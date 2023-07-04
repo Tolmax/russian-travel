@@ -1,0 +1,12 @@
+.message__title {
+  max-width: 720px;
+  max-height: 200px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 104%;
+  color: #FFFFFF;
+  text-align: center;
+  margin: 0 auto;
+}

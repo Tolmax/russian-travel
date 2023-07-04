@@ -1,0 +1,13 @@
+.photo-grid {
+    max-width: 1184px;
+    /*height: 942px;*/
+    display: grid;
+    gap: 16px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    grid-template-columns: repeat(4, 284px); /*надо ли так делать*/
+    grid-template-rows: repeat(3, 213px);
+    grid-auto-flow: row;
+    margin: 0 auto;
+  }

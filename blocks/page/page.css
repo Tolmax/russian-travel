@@ -1,0 +1,29 @@
+* body, 
+page, 
+section,
+grid,
+table,
+footer,
+infor,
+footer-content,
+div,
+p,
+h1,
+h2,
+h4,
+a,
+img {
+  border: 1px solid red;
+}
+
+.page {
+    font-family: 'Inter', 'Arial', sans-serif;
+    max-width: 1280px;
+    margin: auto;
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }

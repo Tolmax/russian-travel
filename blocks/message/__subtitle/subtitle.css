@@ -1,0 +1,12 @@
+.message__subtitle {
+  max-width: 640px;
+  max-height: 72px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 120%;
+  color: #FFFFFF;
+  text-align: center;
+  margin: 0 auto;
+}
