@@ -21,7 +21,7 @@
     
 @media screen and (max-width: 425px) {
   .infor__digits-text {
-    font-size: 10x;
+    font-size: 10px;
     max-width: 288px;
   }
 }
