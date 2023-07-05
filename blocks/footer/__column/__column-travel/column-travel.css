@@ -11,3 +11,6 @@
     padding: 0;
     margin: 0;
   }
+  .footer__column-travel:hover {
+    opacity: 0.5;
+  }

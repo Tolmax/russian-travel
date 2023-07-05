@@ -7,3 +7,26 @@
     align-items: start;
     margin: 0 auto;
   }
+  .header__lang-ru_active:hover {
+    opacity: 0.5;
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1280px) {
+    .header {
+    max-width: 928px;
+  }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .header {
+      max-width: 720px;
+    }
+  }
+  @media screen and (min-width: 425px) and (max-width: 768px) {
+      .header {
+      max-width: 400px;
+    }
+  }
+  @media screen and (max-width: 425px) {
+      .header {
+      max-width: 288px;
+    }
+  }

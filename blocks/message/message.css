@@ -7,3 +7,23 @@
     justify-content: space-between;
     align-items: center;
   }
+  @media screen and (min-width: 1024px) and (max-width: 1280px) {
+    .message {
+      max-width: 928px;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .message {
+      max-width: 768px;
+    }
+  }
+  @media screen and (min-width: 425px) and (max-width: 768px) {
+    .message {
+      max-width: 425px;
+    }
+  }    
+  @media screen and (max-width: 425px) {
+    .message {
+      max-width: 320px;
+    }
+  }
