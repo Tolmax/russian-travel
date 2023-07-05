@@ -1,4 +1,4 @@
-.header__lang-ru_active {
+.header__lang_lang-ru_active {
   max-width: 30px;
   max-width: 28px;
   font-family: 'Inter';
@@ -9,15 +9,20 @@
   text-align: right;
   color: #FFFFFF;
 }
+.header__lang_lang-ru_active:hover {
+  opacity: 0.5;
+}
+
+
 @media screen and (min-width: 425px) and (max-width: 768px) {
-  .header__lang-ru_active {
+  .header__lang_lang-ru_active {
     max-width: 22px;
     max-height: 20px;
     font-size: 16px;
   }
 }
 @media screen and (max-width: 425px) {
-  .header__lang-ru_active {
+  .header__lang_lang-ru_active {
     max-width: 22px;
     max-height: 20px;
     font-size: 16px;

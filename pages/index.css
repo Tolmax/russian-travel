@@ -5,8 +5,8 @@
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__img/img.css);
 @import url(../blocks/header/__lang/lang.css);
-@import url(../blocks/header/__lang-ru/_active/lang-ru.css);
-@import url(../blocks/header/__lang-en/lang-en.css);
+@import url(../blocks/header/__lang/lang-ru/_active/lang-ru.css);
+@import url(../blocks/header/__lang/lang-en/lang-en.css);
 @import url(../blocks/message/message.css);
 @import url(../blocks/message/__title/title.css);
 @import url(../blocks/message/__subtitle/subtitle.css);
