@@ -1,4 +1,4 @@
-/** body, 
+* body, 
 page, 
 section,
 grid,
@@ -15,7 +15,7 @@ a,
 img {
   border: 1px solid red;
 }
-*/
+
 .page {
   font-family: 'Inter', 'Arial', sans-serif;
   max-width: 1280px;

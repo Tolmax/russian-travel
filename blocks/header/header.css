@@ -1,15 +1,12 @@
 .header {
     max-width: 1184px;
-    height: 52px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: start;
     margin: 0 auto;
   }
-  .header__lang-ru_active:hover {
-    opacity: 0.5;
-  }
+  
   @media screen and (min-width: 1024px) and (max-width: 1280px) {
     .header {
     max-width: 928px;

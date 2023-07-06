@@ -1,0 +1,30 @@
+.region__paragraph {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 163%;
+    color: #FFFFFF;
+  }
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {}
+   
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .region__nature {
+    font-size: 16px;
+  }
+}
+   
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  .region__paragraph {
+    font-size: 16px;
+    padding: 16px;
+  }
+}
+    
+@media screen and (max-width: 425px) {
+  .region__paragraph {
+    font-size: 16px;
+    padding: 16px;
+  }
+}

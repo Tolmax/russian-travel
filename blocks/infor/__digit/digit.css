@@ -1,15 +1,12 @@
-.cover__subtitle {
-    margin: 0 auto;
-    max-width: 360px;
-    /*height: 66px;*/
+.infor__digit {
+    
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 122%;
-    text-align: center;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 150%;
     color: #FFFFFF;
-    z-index: 2;
+   
   }
 
 @media screen and (min-width: 1024px) and (max-width: 1280px) {}
@@ -17,15 +14,13 @@
 @media screen and (min-width: 768px) and (max-width: 1023px) {}
    
 @media screen and (min-width: 425px) and (max-width: 768px) {
-  .cover__subtitle {
-    max-width: 280px;
-    font-size: 10px;
+  .infor__digit {
+    font-size: 8px;
   }
 }
     
 @media screen and (max-width: 425px) {
-  .cover__subtitle {
-    max-width: 200px;
-    font-size: 14px;
-  }
+  .infor__digit {
+    font-size: 10px;
+    }
 }
