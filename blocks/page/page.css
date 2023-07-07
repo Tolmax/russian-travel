@@ -1,4 +1,4 @@
-* body, 
+/** body, 
 page, 
 section,
 grid,
@@ -14,7 +14,7 @@ h4,
 a,
 img {
   border: 1px solid red;
-}
+}*/
 
 .page {
   font-family: 'Inter', 'Arial', sans-serif;
