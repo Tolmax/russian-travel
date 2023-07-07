@@ -8,7 +8,7 @@
     grid-template-columns: repeat(4, 284px);
     grid-template-rows: repeat(3, 213px);
     grid-auto-flow: row;
-    margin: 0 auto;
+    margin: 92px auto;
   }
 
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
@@ -26,6 +26,7 @@
     grid-template-columns: repeat(2, 352px);
     grid-template-rows: repeat(6, 264px);
     gap: 16px;
+    margin: 88px auto;
     }
 }
    
@@ -35,6 +36,7 @@
     grid-template-columns: 400px;
     grid-template-rows: repeat(12, 300px);
     gap: 15px;
+    margin: 74px auto;
     }
 }
     
@@ -44,5 +46,6 @@
     grid-template-columns: 288px;
     grid-template-rows: repeat(12, 216px);
     gap: 15px;
+    margin: 64px auto;
     }
 }
