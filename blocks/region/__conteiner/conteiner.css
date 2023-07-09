@@ -1,6 +1,6 @@
 .region__conteiner {
     display: grid;
-    grid-template-columns: 1fr 51.11%;
+    grid-template-columns: 1fr 48.89%;
     grid-template-rows: min-content min-content;
     gap: 47px 17px;
     -webkit-box-sizing: border-box;
@@ -8,6 +8,10 @@
     box-sizing: border-box;
     margin: 0 0 80px 0;
     padding: 0;
+  }
+
+  .region__conteiner:last-child {
+    margin: 0;
   }
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
@@ -19,7 +23,7 @@
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .region__conteiner {
     gap: 46px 28px;
-    margin: 0 0 80px 0;
+    margin: 0 0 71px 0;
   }
 }
    
