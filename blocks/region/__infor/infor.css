@@ -1,0 +1,7 @@
+.region__infor {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+}

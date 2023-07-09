@@ -7,7 +7,7 @@
     margin: 0 auto;
   }
 
-@media screen and (min-width: 1024px) and (max-width: 1280px) {
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
   .photo-grid__image {
     max-width: 300px;
     /*max-height: 225px;*/
@@ -21,14 +21,14 @@
   }
 }
    
-@media screen and (min-width: 425px) and (max-width: 768px) {
+@media screen and (min-width: 425px) and (max-width: 767px) {
   .photo-grid__image {
     max-width: 393px;
     /*max-height: 300px;*/
   }
 }
     
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 444px) {
   .photo-grid__image {
     max-width: 288px;
     /*max-height: 216px;*/

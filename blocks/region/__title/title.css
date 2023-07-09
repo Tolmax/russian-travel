@@ -1,31 +1,38 @@
 .region__title {
+    display: flex;
+    justify-content: flex-start;
+    align-self: flex-start;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 900;
     font-size: 72px;
-    line-height: 1.5;
+    line-height: 106%;
     color: #FFFFFF;
     margin: 0;
+    padding: 0;
   }
 
-@media screen and (min-width: 1024px) and (max-width: 1280px) {}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {}
    
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .region__title {
     font-size: 42px;
+    line-height: 110%;
+    max-width: 330px;
+    margin: 0 0 0 0;
   }
 }
    
-@media screen and (min-width: 425px) and (max-width: 768px) {
+@media screen and (min-width: 425px) and (max-width: 767px) {
   .region__title {
     font-size: 42px;
-    padding: 16px;
+   
   }
 }
     
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 424px) {
   .region__title {
     font-size: 40px;
-    padding: 14px;
+   
   }
 }
