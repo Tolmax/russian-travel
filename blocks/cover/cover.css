@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin: 87px auto;
+    margin: 92px auto;
     background-image: url('../../sprint-3-images/cover-trains.jpg');
     background-size: contain;
     background-repeat: no-repeat;
@@ -54,6 +54,7 @@
   .cover {
     max-width: 425px;
     min-height: 380px;
+    margin: 76px auto;
   }
 }
     
@@ -61,5 +62,6 @@
   .cover {
     min-width: 320px;
     min-height: 200px;
+    margin: 66px auto;
   }
 }

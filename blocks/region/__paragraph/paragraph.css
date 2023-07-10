@@ -9,7 +9,7 @@
     padding: 0;
   }
 
-  .region__paragraph:last-child{
+  .region__paragraph:last-child {
     margin: 0;
   }
 
@@ -25,11 +25,16 @@
 @media screen and (min-width: 425px) and (max-width: 767px) {
   .region__paragraph {
     font-size: 16px;
+    margin: 0 22px 26px 22px;
     }
 }
     
 @media screen and (max-width: 424px) {
   .region__paragraph {
     font-size: 16px;
+      margin: 0 16px 25px 16px;
+    }
+    .region__paragraph:last-child {
+      margin: 0 25px 0 16px;
     }
 }

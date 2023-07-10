@@ -30,6 +30,7 @@
   .cover__subtitle {
     max-width: 280px;
     font-size: 10px;
+    margin: 10px auto 45px;
   }
 }
     
@@ -37,5 +38,6 @@
   .cover__subtitle {
     max-width: 200px;
     font-size: 14px;
+    margin: 8px auto 33px;
   }
 }

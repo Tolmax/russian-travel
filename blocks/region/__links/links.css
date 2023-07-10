@@ -10,12 +10,16 @@
    
 @media screen and (min-width: 425px) and (max-width: 767px) {
   .region__links {
-    padding: 16px;
+    align-self: self-end;
+    margin: 0 0 0 22px;
+    padding: 0;
   }
 }
     
 @media screen and (max-width: 424px) {
   .region__links {
-    padding: 16px;
+    align-self: self-end;
+    margin: 0 0 0 16px;
+    padding: 0;
   }
 }

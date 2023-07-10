@@ -1,6 +1,6 @@
 .infor {
     max-width: 690px;
-    margin: 92px 0 0 147px;
+    margin: 92px 0 0 48px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -16,7 +16,7 @@
     @media screen and (min-width: 768px) and (max-width: 1023px) {
       .infor {
         max-width: 720px;
-        margin: 88px 0 0 24px;
+        margin: 88px 24px;
       }
     } 
     @media screen and (min-width: 425px) and (max-width: 767px) {
