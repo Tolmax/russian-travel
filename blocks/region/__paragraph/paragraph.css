@@ -27,6 +27,9 @@
     font-size: 16px;
     margin: 0 22px 26px 22px;
     }
+    .region__paragraph:last-child {
+      margin: 0 22px 0 22px;
+    }
 }
     
 @media screen and (max-width: 424px) {
@@ -35,6 +38,7 @@
       margin: 0 16px 25px 16px;
     }
     .region__paragraph:last-child {
+      font-size: 16px;
       margin: 0 25px 0 16px;
     }
 }

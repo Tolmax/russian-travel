@@ -23,12 +23,12 @@
    
 @media screen and (min-width: 425px) and (max-width: 767px) {
   .photo-grid__image {
-    max-width: 393px;
-    /*max-height: 300px;*/
+    max-width: 382.5px;
+    /*max-height: 287px;*/
   }
 }
     
-@media screen and (max-width: 444px) {
+@media screen and (max-width: 424px) {
   .photo-grid__image {
     max-width: 288px;
     /*max-height: 216px;*/

@@ -26,7 +26,7 @@
 @import url(../blocks/photo-grid/__image/image.css);
 
 @import url(../blocks/region/region.css);
-@import url(../blocks/region/__conteiner/conteiner.css);
+@import url(../blocks/region/__container/container.css);
 @import url(../blocks/region/__links/links.css);
 @import url(../blocks/region/__title/title.css);
 @import url(../blocks/region/__url-heading/url-heading.css);
@@ -35,6 +35,7 @@
 @import url(../blocks/region/__paragraph/paragraph.css);
 
 @import url(../blocks/cover/cover.css);
+@import url(../blocks/cover/__overlay/overlay.css);
 @import url(../blocks/cover/__title/title.css);
 @import url(../blocks/cover/__subtitle/subtitle.css);
 

@@ -1,4 +1,4 @@
-.region__conteiner {
+.region__container {
     display: grid;
     grid-template-columns: 1fr 48.89%;
     grid-template-rows: min-content min-content;
@@ -10,25 +10,25 @@
     padding: 0;
   }
 
-  .region__conteiner:last-child {
+  .region__container:last-child {
     margin: 0;
   }
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
-.region__conteiner {
+.region__container {
   gap: 47px 20px;
   margin: 0 0 80px 0;
 }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .region__conteiner {
+  .region__container {
     gap: 46px 28px;
     margin: 0 0 71px 0;
   }
 }
    
 @media screen and (min-width: 425px) and (max-width: 767px) {
-  .region__conteiner {
+  .region__container {
     grid-template-columns: 1fr;
     grid-template-rows: min-content;
     gap: 33px;
@@ -37,7 +37,7 @@
 }
     
 @media screen and (max-width: 424px) {
-  .region__conteiner {
+  .region__container {
     grid-template-columns: 1fr;
     grid-template-rows: min-content;
     gap: 32px;
