@@ -2,7 +2,8 @@
     position: static;
     padding: 0;
     text-align: center;
-    margin: 16px auto 245px;
+    margin: 0 auto;
+    /*margin: 16px auto 245px;*/
     max-width: 360px;
     font-family: 'Inter';
     font-style: normal;
@@ -15,13 +16,13 @@
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .cover__subtitle {
-    margin: 16px auto 195px;
+    /*margin: 16px auto 195px;*/
   }
 }
    
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .cover__subtitle {
-    margin: 16px auto 116px;
+    /*margin: 16px auto 116px;*/
   }
 }
    
@@ -29,7 +30,7 @@
   .cover__subtitle {
     max-width: 250px;
     font-size: 14px;
-    margin: 10px auto 45px;
+    /*margin: 10px auto 45px;*/
   }
 }
     
@@ -37,6 +38,6 @@
   .cover__subtitle {
     max-width: 200px;
     font-size: 14px;
-    margin: 8px auto 33px;
+    /*margin: 8px auto 33px;*/
   }
 }
