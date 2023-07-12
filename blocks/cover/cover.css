@@ -20,14 +20,14 @@
 @media screen and (min-width: 425px) and (max-width: 767px) {
   .cover {
     min-width: 425px;
-    margin: 76px 0;
+    margin: 66px 0 64px;
     }
 }
     
 @media screen and (max-width: 424px) {
   .cover {
     min-width: 320px;
-    margin: 76px 0;
+    margin: 66px 0 64px;
     min-height: 200px;
     }
 }
